@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chess-board {
+            border-spacing: 0;
+            border-collapse: collapse;
+            
+        }
+
+        .chess-board th {
+            padding: 2em;
+            
+        }
+
+        .chess-board td {
+            border: 1px solid;
+            width: 1em;
+            height: 1em;
+            text-shadow: 2px 1px white;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .chess-board .light {
+            background: #eee;
+        }
+
+        .chess-board .dark {
+            background: #000;
+        }
+
+        .chessboard {
+            width: 550px;
+            height: 550px;
+            border-style: solid;
+            font-size: 20px;
+            line-height: 2.5;
+            text-align: center;
+            
+        }
+
+        .chessboard>div {
+            height: 11.11%;
+            
+        }
+
+        .chessboard>div>div {
+            width: 11.11%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+           
+        }
+
+        .chessboard>div:nth-child(odd)>div:nth-child(even),
+        .chessboard>div:nth-child(even)>div:nth-child(odd) {
+            background-color: black;
+            color: white;
+           
+
+        }
+
+        .chessboard>div:nth-child(1),
+        .chessboard>div>div:nth-child(1) {
+            background-color: black;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <table class="chess-board">
+        <tbody>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="light">&#9820</td>
+                <td class="dark">&#9822</td>
+                <td class="light">&#9821</td>
+                <td class="dark">&#9819</td>
+                <td class="light">&#9818</td>
+                <td class="dark">&#9821</td>
+                <td class="light">&#9822</td>
+                <td class="dark">&#9820</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="dark">&#9823</td>
+                <td class="light">&#9823</td>
+                <td class="dark">&#9823</td>
+                <td class="light">&#9823</td>
+                <td class="dark">&#9823</td>
+                <td class="light">&#9823</td>
+                <td class="dark">&#9823</td>
+                <td class="light">&#9823</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+                <td class="dark"></td>
+                <td class="light"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="light">&#9817</td>
+                <td class="dark">&#9817</td>
+                <td class="light">&#9817</td>
+                <td class="dark">&#9817</td>
+                <td class="light">&#9817</td>
+                <td class="dark">&#9817</td>
+                <td class="light">&#9817</td>
+                <td class="dark">&#9817</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="dark">&#9814</td>
+                <td class="light">&#9816</td>
+                <td class="dark">&#9815</td>
+                <td class="light">&#9813</td>
+                <td class="dark">&#9812</td>
+                <td class="light">&#9815</td>
+                <td class="dark">&#9816</td>
+                <td class="light">&#9814</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
